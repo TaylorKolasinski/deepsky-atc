@@ -2,7 +2,7 @@
   "scenario_id": "C",
   "scenario_name": "Reduced Staffing",
   "staffing_level": "reduced",
-  "timestamp": "2025-11-18T13:24:48.269301",
+  "timestamp": "2025-11-18T13:30:28.695317",
   "configuration": {
     "num_routes": 50,
     "duration": 3600,

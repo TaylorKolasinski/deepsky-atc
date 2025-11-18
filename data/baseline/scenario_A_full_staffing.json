@@ -2,7 +2,7 @@
   "scenario_id": "A",
   "scenario_name": "Full Staffing",
   "staffing_level": "full",
-  "timestamp": "2025-11-18T13:24:45.534252",
+  "timestamp": "2025-11-18T13:30:26.081275",
   "configuration": {
     "num_routes": 50,
     "duration": 3600,

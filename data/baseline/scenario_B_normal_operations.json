@@ -2,7 +2,7 @@
   "scenario_id": "B",
   "scenario_name": "Normal Operations",
   "staffing_level": "normal",
-  "timestamp": "2025-11-18T13:24:46.907990",
+  "timestamp": "2025-11-18T13:30:27.386654",
   "configuration": {
     "num_routes": 50,
     "duration": 3600,

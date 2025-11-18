@@ -68,14 +68,27 @@ def run_scenario(scenario_config, config, routes):
     scenario_seed = seed + ord(scenario_config['id'])
     random.seed(scenario_seed)
 
+    print(f"DEBUG: Total routes available: {len(routes)}")
+    print(f"DEBUG: Requesting {num_routes} routes for scenario")
+    print()
+
     # Select random routes
     if len(routes) >= num_routes:
         selected_routes = random.sample(routes, num_routes)
     else:
         selected_routes = routes
-        print(f"⚠ Only {len(routes)} routes available (requested {num_routes})")
+        print(f"⚠ WARNING: Only {len(routes)} routes available (requested {num_routes})")
 
-    print(f"Selected {len(selected_routes)} routes")
+    print(f"✓ Selected {len(selected_routes)} routes")
+
+    # Show sample routes
+    print()
+    print("Sample routes:")
+    for i, route in enumerate(selected_routes[:3]):
+        print(f"  {i+1}. {route.departure_icao} → {route.arrival_icao} "
+              f"({route.total_distance_nm:.0f} nm, {route.aircraft_type})")
+    if len(selected_routes) > 3:
+        print(f"  ... and {len(selected_routes) - 3} more routes")
     print()
 
     # Create components
@@ -102,28 +115,49 @@ def run_scenario(scenario_config, config, routes):
     print()
 
     # Add aircraft with staggered departures
-    print(f"Adding {len(selected_routes)} aircraft...")
+    print("=" * 80)
+    print("ADDING AIRCRAFT TO SIMULATION")
+    print("=" * 80)
+    print()
+    print(f"Adding {len(selected_routes)} aircraft with staggered departures...")
+    print(f"Departure interval: {departure_min}-{departure_max} seconds")
+    print()
+
     departure_time = 0.0
+    added_count = 0
 
     for i, route in enumerate(selected_routes):
         # Add aircraft
         aircraft_id = manager.add_aircraft(route, departure_time)
+        added_count += 1
+
+        # Show first few and periodic updates
+        if i < 3 or (i + 1) % 10 == 0 or i == len(selected_routes) - 1:
+            print(f"  [{i + 1}/{len(selected_routes)}] Added {aircraft_id}: "
+                  f"{route.departure_icao}→{route.arrival_icao} "
+                  f"(departs at t={departure_time:.0f}s)")
 
         # Calculate next departure time (random interval)
         departure_interval = random.uniform(departure_min, departure_max)
         departure_time += departure_interval
 
-        if (i + 1) % 10 == 0 or i == len(selected_routes) - 1:
-            print(f"  Added {i + 1}/{len(selected_routes)} aircraft")
-
     print()
-    print(f"Aircraft departure window: {departure_time / 60:.1f} minutes")
+    print(f"✓ Successfully added {added_count} aircraft to simulation")
+    print(f"  Total aircraft in manager: {manager.total_aircraft_spawned}")
+    print(f"  Departure window: {(departure_time - departure_interval) / 60:.1f} minutes")
+    print(f"  Last departure: t={departure_time - departure_interval:.0f}s")
     print()
 
     # Run simulation
-    print("Running simulation...")
-    print(f"  Duration: {duration}s ({duration / 60:.0f} minutes)")
-    print(f"  Time step: {time_step}s")
+    print("=" * 80)
+    print("RUNNING SIMULATION")
+    print("=" * 80)
+    print()
+    print(f"Simulation duration: {duration}s ({duration / 60:.0f} minutes)")
+    print(f"Time step: {time_step}s")
+    print(f"Progress updates every: {progress_interval}s")
+    print()
+    print("Starting simulation loop...")
     print()
 
     stats = manager.run(
@@ -136,15 +170,33 @@ def run_scenario(scenario_config, config, routes):
     manager.output.close()
 
     print()
-    print("Simulation complete!")
+    print("=" * 80)
+    print("SIMULATION COMPLETE")
+    print("=" * 80)
     print()
 
-    # Print summary
+    # Print summary with debugging info
     pm = stats['performance_metrics']
     staffing_info = stats['staffing']
 
+    print("Flight Statistics:")
+    print(f"  Total aircraft spawned: {stats['total_flights']}")
+    print(f"  Flights completed: {stats['completed_flights']}")
+    print(f"  Still active: {stats['active_flights']}")
+    print(f"  Still waiting: {stats['waiting_flights']}")
+    print()
+
+    # Warning if no flights completed
+    if stats['completed_flights'] == 0:
+        print("⚠ WARNING: No flights completed!")
+        print("  This likely means:")
+        print("  - Routes are too long for 1-hour simulation")
+        print("  - Most JFK routes are international (2-4+ hour flights)")
+        print("  - Consider: longer simulation or shorter domestic routes")
+        print()
+
     print("=" * 80)
-    print("RESULTS SUMMARY")
+    print("PERFORMANCE METRICS")
     print("=" * 80)
     print()
     print(f"Safety Score: {pm['safety_score']:.1f}/100")
@@ -153,11 +205,18 @@ def run_scenario(scenario_config, config, routes):
     print(f"  Total: {pm['conflict_metrics']['total_conflicts']:.0f}")
     print(f"  Per Hour: {pm['conflict_metrics']['conflicts_per_hour']:.2f}")
     print(f"  Critical: {pm['conflict_metrics']['critical_conflicts']:.0f}")
+    print(f"  Warning: {pm['conflict_metrics']['warning_conflicts']:.0f}")
+    print(f"  Near: {pm['conflict_metrics']['near_conflicts']:.0f}")
     print()
     print(f"On-Time Performance:")
     print(f"  Completed: {pm['on_time_performance']['total_flights_completed']}")
     print(f"  On-Time %: {pm['on_time_performance']['on_time_percentage']:.1f}%")
     print(f"  Avg Delay: {pm['on_time_performance']['average_delay_minutes']:.1f} min")
+    print()
+    print(f"Throughput:")
+    print(f"  Flights/Hour: {pm['throughput']['flights_per_hour']:.2f}")
+    print(f"  Peak Concurrent: {int(pm['throughput']['peak_concurrent_aircraft'])} aircraft")
+    print(f"  Avg Concurrent: {pm['throughput']['average_concurrent_aircraft']:.2f} aircraft")
     print()
     print(f"Controller Workload:")
     print(f"  Avg: {staffing_info['average_workload_factor']:.2f}x")
@@ -332,22 +391,57 @@ def main():
     print()
 
     # Load configuration
-    print("Loading configuration...")
+    print("=" * 80)
+    print("LOADING CONFIGURATION")
+    print("=" * 80)
+    print()
     config = load_config()
-    print(f"✓ Loaded: {len(config['scenarios'])} scenarios")
+    print(f"✓ Configuration loaded")
+    print(f"  Scenarios: {len(config['scenarios'])}")
+    print(f"  Aircraft per scenario: {config['simulation_parameters']['num_routes_per_scenario']}")
+    print(f"  Simulation duration: {config['simulation_parameters']['simulation_duration']}s")
     print()
 
     # Load routes
-    print("Loading flight routes...")
-    all_routes = load_routes_from_data()
-    print(f"✓ Loaded: {len(all_routes)} routes")
+    print("=" * 80)
+    print("LOADING FLIGHT ROUTES")
+    print("=" * 80)
     print()
+    print("Loading routes from data/jfk_routes.csv...")
+    all_routes = load_routes_from_data()
 
     if len(all_routes) == 0:
-        print("✗ ERROR: No routes available. Run data acquisition first!")
+        print()
+        print("✗ ERROR: No routes available!")
+        print("  Run data acquisition first:")
+        print("  python src/data_acquisition.py")
         return 1
 
+    print(f"✓ Successfully loaded {len(all_routes)} routes")
+    print()
+
+    # Show route statistics
+    print("Route statistics:")
+    total_dist = sum(r.total_distance_nm for r in all_routes)
+    avg_dist = total_dist / len(all_routes) if all_routes else 0
+    print(f"  Average distance: {avg_dist:.0f} nm")
+
+    # Sample routes
+    print()
+    print("Sample routes:")
+    for i, route in enumerate(all_routes[:5]):
+        print(f"  {i+1}. {route.departure_icao} → {route.arrival_icao}: "
+              f"{route.total_distance_nm:.0f} nm ({route.aircraft_type})")
+    if len(all_routes) > 5:
+        print(f"  ... and {len(all_routes) - 5} more")
+    print()
+
     # Run each scenario
+    print("=" * 80)
+    print(f"RUNNING {len(config['scenarios'])} BASELINE SCENARIOS")
+    print("=" * 80)
+    print()
+
     all_results = []
 
     for scenario_config in config['scenarios']:
@@ -357,9 +451,14 @@ def main():
             all_results.append(result)
 
         except Exception as e:
-            print(f"\n✗ ERROR in scenario {scenario_config['id']}: {e}")
+            print()
+            print("=" * 80)
+            print(f"✗ ERROR in scenario {scenario_config['id']}")
+            print("=" * 80)
+            print(f"Error: {e}")
             import traceback
             traceback.print_exc()
+            print()
             continue
 
     # Generate summary outputs

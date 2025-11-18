@@ -1,5 +1,5 @@
 # DeepSky ATC Staffing Scenario Comparison
-Generated: 2025-11-18 13:24:50
+Generated: 2025-11-18 13:30:31
 
 ## Overview
 
