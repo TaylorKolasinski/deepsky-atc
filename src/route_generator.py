@@ -36,6 +36,8 @@ class FlightRoute:
         initial_heading_deg: Initial heading in degrees (0-360)
         initial_altitude_ft: Initial altitude at departure (usually 0 at gate)
         total_distance_nm: Total route distance in nautical miles
+        scheduled_departure_time: Scheduled departure time in seconds (default 0.0)
+        actual_departure_time: Actual departure time in seconds (None until delay applied)
     """
     route_id: str
     aircraft_type: str
@@ -46,17 +48,54 @@ class FlightRoute:
     initial_heading_deg: float = 0.0
     initial_altitude_ft: float = 0.0
     total_distance_nm: float = 0.0
+    scheduled_departure_time: float = 0.0
+    actual_departure_time: Optional[float] = None
 
     def __repr__(self) -> str:
         """String representation of the route."""
+        delay_str = ""
+        if self.actual_departure_time is not None:
+            delay_min = (self.actual_departure_time - self.scheduled_departure_time) / 60.0
+            delay_str = f", delay={delay_min:.1f}min"
+
         return (
             f"FlightRoute(id='{self.route_id}', {self.departure_icao}→{self.arrival_icao}, "
-            f"{self.aircraft_type}, {len(self.waypoints)} waypoints, {self.total_distance_nm:.0f}nm)"
+            f"{self.aircraft_type}, {len(self.waypoints)} waypoints, {self.total_distance_nm:.0f}nm{delay_str})"
         )
+
+    def apply_delay(self, delay_model, hour_of_day: Optional[int] = None) -> float:
+        """
+        Apply departure delay to this route using a delay model.
+
+        Args:
+            delay_model: DelayModel instance to generate delays
+            hour_of_day: Hour of day (0-23) for time-based profile selection.
+                        If None, uses scheduled_departure_time to determine hour.
+
+        Returns:
+            Delay amount in minutes
+
+        Example:
+            >>> from src.delay_model import DelayModel
+            >>> delay_model = DelayModel(seed=42)
+            >>> route = FlightRoute(...)
+            >>> delay_min = route.apply_delay(delay_model, hour_of_day=8)
+            >>> print(f"Delayed by {delay_min:.1f} minutes")
+        """
+        # Calculate actual departure time
+        self.actual_departure_time = delay_model.get_actual_departure_time(
+            scheduled_time=self.scheduled_departure_time,
+            hour_of_day=hour_of_day
+        )
+
+        # Calculate and return delay in minutes
+        delay_minutes = (self.actual_departure_time - self.scheduled_departure_time) / 60.0
+
+        return delay_minutes
 
     def get_route_summary(self) -> dict:
         """Get summary information about this route."""
-        return {
+        summary = {
             'route_id': self.route_id,
             'departure': self.departure_icao,
             'arrival': self.arrival_icao,
@@ -65,8 +104,16 @@ class FlightRoute:
             'num_waypoints': len(self.waypoints),
             'initial_heading': self.initial_heading_deg,
             'initial_speed': self.initial_speed_knots,
-            'max_altitude': max((wp[2] for wp in self.waypoints), default=0)
+            'max_altitude': max((wp[2] for wp in self.waypoints), default=0),
+            'scheduled_departure_time': self.scheduled_departure_time,
+            'actual_departure_time': self.actual_departure_time
         }
+
+        # Add delay information if available
+        if self.actual_departure_time is not None:
+            summary['delay_minutes'] = (self.actual_departure_time - self.scheduled_departure_time) / 60.0
+
+        return summary
 
 
 def calculate_great_circle_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
