@@ -1,0 +1,79 @@
+{
+  "scenario_id": "D",
+  "scenario_name": "Government Shutdown",
+  "staffing_level": "shutdown",
+  "timestamp": "2025-11-18T13:24:49.728119",
+  "configuration": {
+    "num_routes": 50,
+    "duration": 3600,
+    "seed": 110,
+    "delay_profile": "weather"
+  },
+  "results": {
+    "total_flights": 50,
+    "completed_flights": 0,
+    "active_flights": 2,
+    "waiting_flights": 48,
+    "total_simulation_time": 3600.0,
+    "conflicts": {
+      "total_conflicts": 0,
+      "active_conflicts": 0,
+      "resolved_conflicts": 0,
+      "average_duration_seconds": 0.0,
+      "max_duration_seconds": 0.0,
+      "min_duration_seconds": 0.0,
+      "severity_breakdown": {
+        "CRITICAL": 0,
+        "WARNING": 0,
+        "NEAR": 0
+      },
+      "closest_approach_nm": null,
+      "total_conflict_time_seconds": 0.0
+    },
+    "performance_metrics": {
+      "simulation_duration_hours": 1.0,
+      "conflict_metrics": {
+        "total_conflicts": 0,
+        "conflicts_per_hour": 0.0,
+        "conflict_minutes": 0.0,
+        "avg_conflict_duration_seconds": 0.0,
+        "critical_conflicts": 0,
+        "warning_conflicts": 0,
+        "near_conflicts": 0,
+        "severity_breakdown": {}
+      },
+      "on_time_performance": {
+        "total_flights_completed": 0,
+        "on_time_percentage": 0.0,
+        "average_delay_minutes": 0.0,
+        "median_delay_minutes": 0.0,
+        "delay_percentiles": {
+          "p50": 0,
+          "p75": 0,
+          "p90": 0,
+          "p95": 0
+        },
+        "flights_early": 0
+      },
+      "throughput": {
+        "flights_per_hour": 0.0,
+        "peak_concurrent_aircraft": 2,
+        "average_concurrent_aircraft": 1.0591666666666666
+      },
+      "efficiency": {
+        "conflict_free_percentage": 100.0,
+        "separation_violations_per_100_flights": 0.0
+      },
+      "safety_score": 100.0
+    },
+    "staffing": {
+      "staffing_level": "shutdown",
+      "num_controllers": 1,
+      "capacity": 15,
+      "description": "Government Shutdown - Minimal Staff",
+      "average_workload_factor": 0.07061111111110853,
+      "peak_workload_factor": 0.13333333333333333,
+      "time_overloaded_percent": 0.0
+    }
+  }
+}
