@@ -11,6 +11,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from src.physics import haversine_distance
+
 
 # Constants for flight planning
 CRUISE_ALTITUDE_FT = 35000  # Typical cruise altitude
@@ -92,6 +94,36 @@ class FlightRoute:
         delay_minutes = (self.actual_departure_time - self.scheduled_departure_time) / 60.0
 
         return delay_minutes
+
+    def calculate_great_circle_distance(self) -> float:
+        """
+        Calculate great-circle distance between departure and arrival airports.
+
+        Uses haversine formula to compute the shortest distance over Earth's surface
+        between the first and last waypoints of this route.
+
+        Returns:
+            Distance in nautical miles
+
+        Example:
+            >>> route = FlightRoute(...)
+            >>> distance_nm = route.calculate_great_circle_distance()
+            >>> print(f"Great circle distance: {distance_nm:.0f} nm")
+        """
+        if not self.waypoints or len(self.waypoints) < 2:
+            return 0.0
+
+        # Get first and last waypoints (departure and arrival)
+        departure_lat, departure_lon, _ = self.waypoints[0]
+        arrival_lat, arrival_lon, _ = self.waypoints[-1]
+
+        # Calculate haversine distance
+        distance_nm = haversine_distance(
+            departure_lat, departure_lon,
+            arrival_lat, arrival_lon
+        )
+
+        return distance_nm
 
     def get_route_summary(self) -> dict:
         """Get summary information about this route."""
