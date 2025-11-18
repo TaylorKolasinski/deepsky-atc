@@ -1,0 +1,6 @@
+Scenario ID,Scenario Name,Staffing Level,Controllers,Capacity,Safety Score,Total Conflicts,Conflicts/Hour,Critical Conflicts,Flights Completed,On-Time %,Avg Delay (min),Peak Concurrent,Avg Workload,Peak Workload
+A,Full Staffing,full,4,60,20.6,274,137.00,204,4,0.0,19.5,48,0.30,0.80
+B,Normal Operations,normal,3,36,20.0,231,115.50,178,4,0.0,20.1,47,0.48,1.31
+C,Reduced Staffing,reduced,2,24,20.5,253,126.50,198,4,0.0,23.0,48,0.70,2.00
+D,Government Shutdown,shutdown,1,15,20.5,251,125.50,184,4,0.0,20.5,47,1.19,3.13
+E,No Control,none,0,0,20.1,253,126.50,198,4,0.0,21.3,48,0.00,0.00

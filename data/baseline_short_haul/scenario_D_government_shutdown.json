@@ -1,0 +1,85 @@
+{
+  "scenario_id": "D",
+  "scenario_name": "Government Shutdown",
+  "staffing_level": "shutdown",
+  "timestamp": "2025-11-18T13:45:10.034218",
+  "configuration": {
+    "num_routes": 62,
+    "duration": 7200,
+    "seed": 110,
+    "delay_profile": "weather",
+    "max_route_distance": 773.6644183978038,
+    "min_route_distance": 81.32808477333205,
+    "avg_route_distance": 398.67996151046395
+  },
+  "results": {
+    "total_flights": 62,
+    "completed_flights": 4,
+    "active_flights": 47,
+    "waiting_flights": 11,
+    "total_simulation_time": 7200.0,
+    "conflicts": {
+      "total_conflicts": 251,
+      "active_conflicts": 231,
+      "resolved_conflicts": 20,
+      "average_duration_seconds": 15.15,
+      "max_duration_seconds": 26.0,
+      "min_duration_seconds": 8.0,
+      "severity_breakdown": {
+        "CRITICAL": 184,
+        "WARNING": 67,
+        "NEAR": 0
+      },
+      "closest_approach_nm": 0.047599972687969914,
+      "total_conflict_time_seconds": 303.0
+    },
+    "performance_metrics": {
+      "simulation_duration_hours": 2.0,
+      "conflict_metrics": {
+        "total_conflicts": 251,
+        "conflicts_per_hour": 125.5,
+        "conflict_minutes": 78.93333333333334,
+        "avg_conflict_duration_seconds": 1830.1274900398407,
+        "critical_conflicts": 184,
+        "warning_conflicts": 67,
+        "near_conflicts": 0,
+        "severity_breakdown": {
+          "WARNING": 67,
+          "CRITICAL": 184
+        }
+      },
+      "on_time_performance": {
+        "total_flights_completed": 4,
+        "on_time_percentage": 0.0,
+        "average_delay_minutes": 20.548414581194503,
+        "median_delay_minutes": 19.656913916410048,
+        "delay_percentiles": {
+          "p50": 19.656913916410048,
+          "p75": 21.79046722848082,
+          "p90": 23.395168425092848,
+          "p95": 23.93006882396352
+        },
+        "flights_early": 0
+      },
+      "throughput": {
+        "flights_per_hour": 2.0,
+        "peak_concurrent_aircraft": 47,
+        "average_concurrent_aircraft": 17.863611111111112
+      },
+      "efficiency": {
+        "conflict_free_percentage": 34.22222222222222,
+        "separation_violations_per_100_flights": 6275.0
+      },
+      "safety_score": 20.53333333333333
+    },
+    "staffing": {
+      "staffing_level": "shutdown",
+      "num_controllers": 1,
+      "capacity": 15,
+      "description": "Government Shutdown - Minimal Staff",
+      "average_workload_factor": 1.190907407407432,
+      "peak_workload_factor": 3.1333333333333333,
+      "time_overloaded_percent": 40.90277777777778
+    }
+  }
+}

@@ -5,10 +5,12 @@ Loads baseline simulation results and generates comparison visualizations
 for blog posts, LinkedIn, and documentation.
 
 Usage:
-    python scripts/analyze_baseline.py
+    python scripts/analyze_baseline.py [--input data/baseline/]
+    python scripts/analyze_baseline.py --input data/baseline_short_haul/
 """
 
 import sys
+import argparse
 from pathlib import Path
 import json
 import matplotlib.pyplot as plt
@@ -20,29 +22,91 @@ project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
 
-def load_config():
-    """Load baseline configuration."""
-    config_path = project_root / "data" / "baseline_config.json"
-    with open(config_path, 'r') as f:
-        return json.load(f)
+def parse_arguments():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description='Analyze DeepSky ATC baseline simulation results'
+    )
+    parser.add_argument(
+        '--input',
+        type=str,
+        default='data/baseline',
+        help='Input directory containing baseline results (default: data/baseline)'
+    )
+    parser.add_argument(
+        '--output',
+        type=str,
+        default='docs/images',
+        help='Output directory for visualizations (default: docs/images)'
+    )
+    return parser.parse_args()
 
 
-def load_baseline_results(config):
-    """Load all baseline scenario results."""
-    baseline_dir = project_root / config['output_directories']['baseline_results']
+def validate_input_directory(input_dir):
+    """
+    Validate that input directory exists and contains required files.
+
+    Args:
+        input_dir: Path to input directory
+
+    Returns:
+        True if valid, False otherwise
+    """
+    input_path = project_root / input_dir
+
+    if not input_path.exists():
+        print(f"✗ ERROR: Input directory does not exist: {input_path}")
+        return False
+
+    if not input_path.is_dir():
+        print(f"✗ ERROR: Input path is not a directory: {input_path}")
+        return False
+
+    # Check for scenario files
+    scenario_files = list(input_path.glob("scenario_*.json"))
+    if len(scenario_files) == 0:
+        print(f"✗ ERROR: No scenario files found in: {input_path}")
+        print(f"  Expected files like: scenario_A_full_staffing.json")
+        return False
+
+    print(f"✓ Found {len(scenario_files)} scenario files in {input_path}")
+    return True
+
+
+def load_baseline_results(input_dir):
+    """
+    Load all baseline scenario results from input directory.
+
+    Args:
+        input_dir: Path to directory containing scenario JSON files
+
+    Returns:
+        List of result dictionaries
+    """
+    baseline_dir = project_root / input_dir
+
+    print()
+    print(f"Loading baseline results from: {baseline_dir}")
+    print()
+
+    # Find all scenario files
+    scenario_files = sorted(baseline_dir.glob("scenario_*.json"))
 
     results = []
-    for scenario in config['scenarios']:
-        filename = f"scenario_{scenario['id']}_{scenario['name'].lower().replace(' ', '_')}.json"
-        filepath = baseline_dir / filename
+    for filepath in scenario_files:
+        print(f"  Loading: {filepath.name}")
 
-        if not filepath.exists():
-            print(f"⚠ Missing: {filepath}")
+        try:
+            with open(filepath, 'r') as f:
+                result = json.load(f)
+                results.append(result)
+        except Exception as e:
+            print(f"    ⚠ WARNING: Failed to load {filepath.name}: {e}")
             continue
 
-        with open(filepath, 'r') as f:
-            result = json.load(f)
-            results.append(result)
+    print()
+    print(f"✓ Loaded {len(results)} scenario results")
+    print()
 
     return results
 
@@ -372,26 +436,37 @@ def main():
     print("*" * 80)
     print()
 
-    # Load configuration
-    print("Loading configuration...")
-    config = load_config()
-    print(f"✓ Configuration loaded")
+    # Parse command line arguments
+    args = parse_arguments()
+
+    # Show which directory is being analyzed
+    print(f"Input directory: {args.input}")
+    print(f"Output directory: {args.output}")
+    print()
+
+    # Validate input directory
+    if not validate_input_directory(args.input):
+        print()
+        print("✗ ERROR: Invalid input directory")
+        print()
+        print("Usage:")
+        print("  python scripts/analyze_baseline.py [--input data/baseline/]")
+        print("  python scripts/analyze_baseline.py --input data/baseline_short_haul/")
+        print()
+        return 1
+
     print()
 
     # Load baseline results
-    print("Loading baseline results...")
-    results = load_baseline_results(config)
+    results = load_baseline_results(args.input)
 
     if len(results) == 0:
         print("✗ ERROR: No baseline results found!")
         print("   Run: python scripts/run_baseline.py")
         return 1
 
-    print(f"✓ Loaded {len(results)} scenario results")
-    print()
-
     # Create output directory
-    output_dir = project_root / config['output_directories']['visualizations']
+    output_dir = project_root / args.output
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Generate visualizations
@@ -420,10 +495,13 @@ def main():
     print("BASELINE ANALYSIS COMPLETE")
     print("=" * 80)
     print()
+    print("Analyzed dataset:")
+    print(f"  • Input: {args.input}")
+    print()
     print("Outputs:")
     print(f"  • Visualizations: {output_dir}")
-    print(f"  • Comparison report: docs/reports/baseline_comparison.md")
-    print(f"  • Summary CSV: data/baseline/baseline_summary.csv")
+    print(f"  • Individual scenarios: {args.input}/scenario_*.json")
+    print(f"  • Summary CSV: {args.input}/baseline_summary.csv")
     print()
     print("Next steps:")
     print("  • Review visualizations for blog posts / LinkedIn")

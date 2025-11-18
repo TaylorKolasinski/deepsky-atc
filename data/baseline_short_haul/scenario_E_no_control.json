@@ -1,0 +1,85 @@
+{
+  "scenario_id": "E",
+  "scenario_name": "No Control",
+  "staffing_level": "none",
+  "timestamp": "2025-11-18T13:45:27.636534",
+  "configuration": {
+    "num_routes": 62,
+    "duration": 7200,
+    "seed": 111,
+    "delay_profile": "overnight",
+    "max_route_distance": 773.6644183978038,
+    "min_route_distance": 81.32808477333205,
+    "avg_route_distance": 398.67996151046395
+  },
+  "results": {
+    "total_flights": 62,
+    "completed_flights": 4,
+    "active_flights": 48,
+    "waiting_flights": 10,
+    "total_simulation_time": 7200.0,
+    "conflicts": {
+      "total_conflicts": 253,
+      "active_conflicts": 253,
+      "resolved_conflicts": 0,
+      "average_duration_seconds": 0.0,
+      "max_duration_seconds": 0.0,
+      "min_duration_seconds": 0.0,
+      "severity_breakdown": {
+        "CRITICAL": 198,
+        "WARNING": 55,
+        "NEAR": 0
+      },
+      "closest_approach_nm": 0.047599972687969914,
+      "total_conflict_time_seconds": 0.0
+    },
+    "performance_metrics": {
+      "simulation_duration_hours": 2.0,
+      "conflict_metrics": {
+        "total_conflicts": 253,
+        "conflicts_per_hour": 126.5,
+        "conflict_minutes": 79.78333333333333,
+        "avg_conflict_duration_seconds": 1839.7272727272727,
+        "critical_conflicts": 198,
+        "warning_conflicts": 55,
+        "near_conflicts": 0,
+        "severity_breakdown": {
+          "WARNING": 55,
+          "CRITICAL": 198
+        }
+      },
+      "on_time_performance": {
+        "total_flights_completed": 4,
+        "on_time_percentage": 0.0,
+        "average_delay_minutes": 21.304552102694565,
+        "median_delay_minutes": 21.552197393067946,
+        "delay_percentiles": {
+          "p50": 21.552197393067946,
+          "p75": 22.039900901979856,
+          "p90": 22.064078742918856,
+          "p95": 22.072138023231858
+        },
+        "flights_early": 0
+      },
+      "throughput": {
+        "flights_per_hour": 2.0,
+        "peak_concurrent_aircraft": 48,
+        "average_concurrent_aircraft": 17.0275
+      },
+      "efficiency": {
+        "conflict_free_percentage": 33.513888888888886,
+        "separation_violations_per_100_flights": 6325.0
+      },
+      "safety_score": 20.108333333333334
+    },
+    "staffing": {
+      "staffing_level": "none",
+      "num_controllers": 0,
+      "capacity": 0,
+      "description": "AI-Only - Zero Human Controllers",
+      "average_workload_factor": 0.0,
+      "peak_workload_factor": 0.0,
+      "time_overloaded_percent": 0.0
+    }
+  }
+}
