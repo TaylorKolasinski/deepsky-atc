@@ -547,6 +547,178 @@ class PerformanceMetrics:
         )
 
 
+def generate_staffing_comparison_report(
+    results_list: List[Dict[str, Any]],
+    output_path: str
+) -> None:
+    """
+    Generate side-by-side comparison report for different staffing scenarios.
+
+    Takes simulation results from multiple staffing levels and generates
+    a formatted markdown table comparing key performance metrics. Perfect
+    for demonstrating AI superiority over government shutdown scenario.
+
+    Args:
+        results_list: List of dictionaries, each containing:
+            - staffing_level: Staffing configuration name
+            - performance_metrics: Summary statistics from metrics.get_summary_statistics()
+            - staffing: Staffing info from simulation_manager.get_statistics()
+        output_path: Path to output markdown file
+
+    Example:
+        >>> results = []
+        >>> for level in ['full', 'normal', 'reduced', 'shutdown', 'none']:
+        >>>     manager = create_demo_simulation(staffing_level=level)
+        >>>     stats = manager.run(duration_seconds=3600)
+        >>>     results.append(stats)
+        >>> generate_staffing_comparison_report(results, 'comparison.md')
+    """
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Build comparison report
+    report = []
+    report.append("# DeepSky ATC Staffing Scenario Comparison\n")
+    report.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+
+    report.append("## Overview\n\n")
+    report.append("Comparison of air traffic control performance across different staffing scenarios, ")
+    report.append("from full staffing to government shutdown conditions.\n\n")
+
+    # Staffing Configuration Table
+    report.append("## Staffing Configurations\n\n")
+    report.append("| Scenario | Controllers | Capacity | Description |\n")
+    report.append("|----------|-------------|----------|-------------|\n")
+
+    for result in results_list:
+        staffing = result['staffing']
+        report.append(
+            f"| **{staffing['staffing_level'].upper()}** | "
+            f"{staffing['num_controllers']} | "
+            f"{staffing['capacity']} aircraft | "
+            f"{staffing['description']} |\n"
+        )
+
+    # Performance Metrics Comparison
+    report.append("\n## Performance Metrics Comparison\n\n")
+
+    # Safety Scores
+    report.append("### Safety Score (0-100)\n\n")
+    report.append("| Scenario | Safety Score | Grade |\n")
+    report.append("|----------|--------------|-------|\n")
+
+    for result in results_list:
+        pm = result['performance_metrics']
+        safety = pm['safety_score']
+        grade = "A" if safety >= 90 else "B" if safety >= 80 else "C" if safety >= 70 else "D" if safety >= 60 else "F"
+        report.append(
+            f"| **{result['staffing']['staffing_level'].upper()}** | "
+            f"{safety:.1f} | {grade} |\n"
+        )
+
+    # Conflict Metrics
+    report.append("\n### Conflict Metrics\n\n")
+    report.append("| Scenario | Total Conflicts | Conflicts/Hour | Critical | Warning | Near |\n")
+    report.append("|----------|-----------------|----------------|----------|---------|------|\n")
+
+    for result in results_list:
+        cm = result['performance_metrics']['conflict_metrics']
+        report.append(
+            f"| **{result['staffing']['staffing_level'].upper()}** | "
+            f"{cm['total_conflicts']:.0f} | "
+            f"{cm['conflicts_per_hour']:.2f} | "
+            f"{cm['critical_conflicts']:.0f} | "
+            f"{cm['warning_conflicts']:.0f} | "
+            f"{cm['near_conflicts']:.0f} |\n"
+        )
+
+    # On-Time Performance
+    report.append("\n### On-Time Performance\n\n")
+    report.append("| Scenario | Flights Completed | On-Time % | Avg Delay (min) | Median Delay (min) |\n")
+    report.append("|----------|-------------------|-----------|-----------------|--------------------|\n")
+
+    for result in results_list:
+        otp = result['performance_metrics']['on_time_performance']
+        report.append(
+            f"| **{result['staffing']['staffing_level'].upper()}** | "
+            f"{otp['total_flights_completed']} | "
+            f"{otp['on_time_percentage']:.1f}% | "
+            f"{otp['average_delay_minutes']:.1f} | "
+            f"{otp['median_delay_minutes']:.1f} |\n"
+        )
+
+    # Throughput
+    report.append("\n### Throughput\n\n")
+    report.append("| Scenario | Flights/Hour | Peak Concurrent | Avg Concurrent |\n")
+    report.append("|----------|--------------|-----------------|----------------|\n")
+
+    for result in results_list:
+        tp = result['performance_metrics']['throughput']
+        report.append(
+            f"| **{result['staffing']['staffing_level'].upper()}** | "
+            f"{tp['flights_per_hour']:.2f} | "
+            f"{tp['peak_concurrent_aircraft']:.0f} | "
+            f"{tp['average_concurrent_aircraft']:.2f} |\n"
+        )
+
+    # Workload Statistics
+    report.append("\n### Controller Workload\n\n")
+    report.append("| Scenario | Avg Workload | Peak Workload | Time Overloaded (%) |\n")
+    report.append("|----------|--------------|---------------|---------------------|\n")
+
+    for result in results_list:
+        staffing = result['staffing']
+        report.append(
+            f"| **{staffing['staffing_level'].upper()}** | "
+            f"{staffing['average_workload_factor']:.2f}x | "
+            f"{staffing['peak_workload_factor']:.2f}x | "
+            f"{staffing['time_overloaded_percent']:.1f}% |\n"
+        )
+
+    # Key Insights
+    report.append("\n## Key Insights\n\n")
+
+    # Find full and shutdown scenarios for comparison
+    full_result = next((r for r in results_list if r['staffing']['staffing_level'] == 'full'), None)
+    shutdown_result = next((r for r in results_list if r['staffing']['staffing_level'] == 'shutdown'), None)
+    ai_result = next((r for r in results_list if r['staffing']['staffing_level'] == 'none'), None)
+
+    if full_result and shutdown_result:
+        full_conflicts = full_result['performance_metrics']['conflict_metrics']['conflicts_per_hour']
+        shutdown_conflicts = shutdown_result['performance_metrics']['conflict_metrics']['conflicts_per_hour']
+
+        if full_conflicts > 0:
+            conflict_increase = ((shutdown_conflicts - full_conflicts) / full_conflicts) * 100
+            report.append(f"- **Government Shutdown Impact**: Conflicts increased by {conflict_increase:.0f}% compared to full staffing\n")
+
+        full_delay = full_result['performance_metrics']['on_time_performance']['average_delay_minutes']
+        shutdown_delay = shutdown_result['performance_metrics']['on_time_performance']['average_delay_minutes']
+
+        if full_delay != 0:
+            delay_increase = ((shutdown_delay - full_delay) / abs(full_delay)) * 100
+            report.append(f"- **Delay Impact**: Average delays increased by {delay_increase:.0f}% under shutdown conditions\n")
+
+        full_safety = full_result['performance_metrics']['safety_score']
+        shutdown_safety = shutdown_result['performance_metrics']['safety_score']
+        safety_drop = full_safety - shutdown_safety
+        report.append(f"- **Safety Degradation**: Safety score dropped {safety_drop:.1f} points (from {full_safety:.1f} to {shutdown_safety:.1f})\n")
+
+    if ai_result and shutdown_result:
+        ai_safety = ai_result['performance_metrics']['safety_score']
+        shutdown_safety = shutdown_result['performance_metrics']['safety_score']
+        report.append(f"\n- **AI vs Shutdown**: AI safety score ({ai_safety:.1f}) vs shutdown ({shutdown_safety:.1f})\n")
+
+        ai_conflicts = ai_result['performance_metrics']['conflict_metrics']['conflicts_per_hour']
+        shutdown_conflicts = shutdown_result['performance_metrics']['conflict_metrics']['conflicts_per_hour']
+        report.append(f"- **AI Conflict Performance**: {ai_conflicts:.2f} conflicts/hour vs {shutdown_conflicts:.2f} under shutdown\n")
+
+    # Write report
+    with open(output_path, 'w') as f:
+        f.writelines(report)
+
+    print(f"✓ Staffing comparison report generated: {output_path}")
+
+
 if __name__ == "__main__":
     """Test metrics when module is executed directly."""
     print("Testing PerformanceMetrics...")

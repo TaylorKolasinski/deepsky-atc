@@ -16,6 +16,7 @@ from src.aircraft import Aircraft
 from src.route_generator import FlightRoute, load_routes_from_data
 from src.conflict_detection import ConflictDetector, ConflictTracker
 from src.metrics import PerformanceMetrics
+from src.controller_capacity import ControllerStaffing
 
 
 class SimulationManager:
@@ -33,17 +34,21 @@ class SimulationManager:
         conflict_detector: Conflict detection engine
         conflict_tracker: Conflict history and statistics
         metrics: Performance metrics tracker
+        controller_staffing: Controller capacity and staffing model
         aircraft_list: List of active Aircraft objects
         simulation_time: Current simulation time in seconds
         total_aircraft_spawned: Total number of aircraft created
         completed_flights: Number of aircraft that have landed
+        workload_history: List of (time, workload_factor) tuples
+        overload_timesteps: Count of timesteps where capacity was exceeded
     """
 
     def __init__(
         self,
         airspace: Airspace,
         delay_model: DelayModel,
-        output: SimulationOutput
+        output: SimulationOutput,
+        controller_staffing: Optional[ControllerStaffing] = None
     ):
         """
         Initialize simulation manager.
@@ -52,6 +57,7 @@ class SimulationManager:
             airspace: Airspace configuration
             delay_model: Delay model for departure delays
             output: Output interface for state export
+            controller_staffing: Controller staffing model (default: normal staffing)
         """
         self.airspace = airspace
         self.delay_model = delay_model
@@ -64,11 +70,20 @@ class SimulationManager:
         # Performance metrics
         self.metrics = PerformanceMetrics()
 
+        # Controller capacity and staffing
+        if controller_staffing is None:
+            controller_staffing = ControllerStaffing("normal")
+        self.controller_staffing = controller_staffing
+
         # Simulation state
         self.aircraft_list: List[Aircraft] = []
         self.simulation_time: float = 0.0
         self.total_aircraft_spawned: int = 0
         self.completed_flights: int = 0
+
+        # Workload tracking
+        self.workload_history: List[tuple] = []
+        self.overload_timesteps: int = 0
 
     def add_aircraft(
         self,
@@ -181,6 +196,16 @@ class SimulationManager:
         # Update conflict tracker
         self.conflict_tracker.update(self.simulation_time, conflicts)
 
+        # Calculate workload and performance penalties
+        active_count = len(in_flight_aircraft)
+        workload_factor = self.controller_staffing.calculate_workload_factor(active_count)
+        performance_penalties = self.controller_staffing.get_performance_penalty(active_count)
+
+        # Track workload statistics
+        self.workload_history.append((self.simulation_time, workload_factor))
+        if workload_factor > 1.0:
+            self.overload_timesteps += 1
+
         # Update performance metrics
         self.metrics.update(self.simulation_time, in_flight_aircraft, conflicts)
 
@@ -282,6 +307,20 @@ class SimulationManager:
         # Get performance metrics
         performance_metrics = self.metrics.get_summary_statistics()
 
+        # Calculate workload statistics
+        if self.workload_history:
+            avg_workload = sum(w for _, w in self.workload_history) / len(self.workload_history)
+            peak_workload = max(w for _, w in self.workload_history)
+            total_timesteps = len(self.workload_history)
+            time_overloaded_pct = (self.overload_timesteps / total_timesteps * 100) if total_timesteps > 0 else 0.0
+        else:
+            avg_workload = 0.0
+            peak_workload = 0.0
+            time_overloaded_pct = 0.0
+
+        # Get staffing description
+        staffing_desc = self.controller_staffing.get_staffing_description()
+
         return {
             'total_flights': self.total_aircraft_spawned,
             'completed_flights': self.completed_flights,
@@ -289,7 +328,16 @@ class SimulationManager:
             'waiting_flights': waiting_count,
             'total_simulation_time': self.simulation_time,
             'conflicts': conflict_stats,
-            'performance_metrics': performance_metrics
+            'performance_metrics': performance_metrics,
+            'staffing': {
+                'staffing_level': staffing_desc['staffing_level'],
+                'num_controllers': staffing_desc['num_controllers'],
+                'capacity': staffing_desc['capacity'],
+                'description': staffing_desc['description'],
+                'average_workload_factor': avg_workload,
+                'peak_workload_factor': peak_workload,
+                'time_overloaded_percent': time_overloaded_pct
+            }
         }
 
     def __repr__(self) -> str:
@@ -307,7 +355,8 @@ def create_demo_simulation(
     num_aircraft: int = 20,
     duration: float = 3600,
     output_mode: str = "file",
-    seed: Optional[int] = None
+    seed: Optional[int] = None,
+    staffing_level: str = "normal"
 ) -> SimulationManager:
     """
     Create a demo simulation with pre-configured routes and settings.
@@ -321,6 +370,8 @@ def create_demo_simulation(
         duration: Simulation duration in seconds (default 3600 = 1 hour)
         output_mode: Output mode - "file", "stdout", or "both" (default "file")
         seed: Random seed for reproducibility (default None)
+        staffing_level: Controller staffing level - "full", "normal", "reduced",
+                       "shutdown", or "none" (default "normal")
 
     Returns:
         Configured SimulationManager ready to run
@@ -381,9 +432,18 @@ def create_demo_simulation(
     print(f"  ✓ Selected {len(selected_routes)} routes")
     print()
 
+    # Create controller staffing
+    print(f"Creating controller staffing (level: {staffing_level})...")
+    controller_staffing = ControllerStaffing(staffing_level)
+    staffing_desc = controller_staffing.get_staffing_description()
+    print(f"  ✓ Created: {controller_staffing}")
+    print(f"  Description: {staffing_desc['description']}")
+    print(f"  Capacity: {staffing_desc['capacity']} aircraft")
+    print()
+
     # Create simulation manager
     print("Creating simulation manager...")
-    manager = SimulationManager(airspace, delay_model, output)
+    manager = SimulationManager(airspace, delay_model, output, controller_staffing)
     print(f"  ✓ Created: {manager}")
     print()
 
