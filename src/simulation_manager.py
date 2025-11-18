@@ -14,6 +14,7 @@ from src.delay_model import DelayModel
 from src.simulation_output import SimulationOutput
 from src.aircraft import Aircraft
 from src.route_generator import FlightRoute, load_routes_from_data
+from src.conflict_detection import ConflictDetector, ConflictTracker
 
 
 class SimulationManager:
@@ -21,12 +22,15 @@ class SimulationManager:
     Manages the ATC simulation lifecycle.
 
     Coordinates aircraft creation, position updates, waypoint tracking,
-    and state export. Provides high-level interface for running simulations.
+    conflict detection, and state export. Provides high-level interface
+    for running simulations.
 
     Attributes:
         airspace: Airspace boundary configuration
         delay_model: Delay model for departure times
         output: Output interface for state export
+        conflict_detector: Conflict detection engine
+        conflict_tracker: Conflict history and statistics
         aircraft_list: List of active Aircraft objects
         simulation_time: Current simulation time in seconds
         total_aircraft_spawned: Total number of aircraft created
@@ -50,6 +54,10 @@ class SimulationManager:
         self.airspace = airspace
         self.delay_model = delay_model
         self.output = output
+
+        # Conflict detection
+        self.conflict_detector = ConflictDetector()
+        self.conflict_tracker = ConflictTracker()
 
         # Simulation state
         self.aircraft_list: List[Aircraft] = []
@@ -151,13 +159,27 @@ class SimulationManager:
         # Update aircraft list
         self.aircraft_list = active_aircraft
 
-        # Export current state
         # Only export aircraft that are actually in flight (not waiting to depart)
         in_flight_aircraft = [
             ac for ac in self.aircraft_list
             if self.simulation_time >= ac.time_elapsed
         ]
-        self.output.export_state(self.simulation_time, in_flight_aircraft)
+
+        # Detect conflicts
+        conflicts = self.conflict_detector.detect_all_conflicts(
+            in_flight_aircraft,
+            self.simulation_time
+        )
+
+        # Update conflict tracker
+        self.conflict_tracker.update(self.simulation_time, conflicts)
+
+        # Export current state (including conflicts)
+        self.output.export_state(
+            self.simulation_time,
+            in_flight_aircraft,
+            conflicts
+        )
 
         return len(in_flight_aircraft)
 
@@ -226,11 +248,13 @@ class SimulationManager:
             - active_flights: Number currently in flight
             - waiting_flights: Number waiting to depart
             - total_simulation_time: Current simulation time
+            - conflicts: Conflict statistics from tracker
 
         Example:
             >>> manager = SimulationManager(airspace, delay_model, output)
             >>> stats = manager.get_statistics()
             >>> print(f"Active: {stats['active_flights']}")
+            >>> print(f"Conflicts: {stats['conflicts']['total_conflicts']}")
         """
         # Count aircraft in different states
         active_count = 0
@@ -242,12 +266,16 @@ class SimulationManager:
             else:
                 waiting_count += 1
 
+        # Get conflict statistics
+        conflict_stats = self.conflict_tracker.get_statistics()
+
         return {
             'total_flights': self.total_aircraft_spawned,
             'completed_flights': self.completed_flights,
             'active_flights': active_count,
             'waiting_flights': waiting_count,
-            'total_simulation_time': self.simulation_time
+            'total_simulation_time': self.simulation_time,
+            'conflicts': conflict_stats
         }
 
     def __repr__(self) -> str:

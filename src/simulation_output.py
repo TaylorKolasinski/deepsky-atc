@@ -78,26 +78,32 @@ class SimulationOutput:
     def export_state(
         self,
         simulation_time: float,
-        aircraft_list: List
+        aircraft_list: List,
+        conflicts: List[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
         """
         Export current simulation state.
 
         Generates a complete snapshot of the simulation including all aircraft
-        states with both geodetic and local Cartesian coordinates.
+        states with both geodetic and local Cartesian coordinates, plus any
+        active conflicts.
 
         Args:
             simulation_time: Current simulation time in seconds
             aircraft_list: List of Aircraft objects
+            conflicts: List of conflict dictionaries (optional)
 
         Returns:
             Dictionary containing simulation state
 
         Example:
             >>> output = SimulationOutput(output_mode="stdout")
-            >>> state = output.export_state(100.0, [aircraft1, aircraft2])
+            >>> state = output.export_state(100.0, [aircraft1, aircraft2], conflicts=[])
             >>> print(f"Active aircraft: {state['aircraft_count']}")
+            >>> print(f"Active conflicts: {state['conflict_count']}")
         """
+        if conflicts is None:
+            conflicts = []
         # Generate simulation timestamp
         # Use simulation_time to create a datetime (assume starts at epoch or specific date)
         base_date = datetime(2024, 1, 15, 0, 0, 0)  # Arbitrary simulation start date
@@ -158,7 +164,9 @@ class SimulationOutput:
             'timestamp': float(simulation_time),
             'simulation_date': simulation_date,
             'aircraft_count': len(aircraft_list),
-            'aircraft': aircraft_states
+            'aircraft': aircraft_states,
+            'conflict_count': len(conflicts),
+            'conflicts': conflicts
         }
 
         # Output based on mode
