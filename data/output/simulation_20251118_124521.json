@@ -1,0 +1,1862 @@
+[
+{
+  "timestamp": 1.0,
+  "simulation_date": "2024-01-15T00:00:01",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64137526169506,
+        "lon": -73.77798425590326,
+        "alt": 33.333333333333336,
+        "x": 9.765900612370968,
+        "y": 8.368718661255732,
+        "z": 10.160000000000002
+      },
+      "velocity": 25.0,
+      "heading": 49.40559687909217,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 1.0
+    }
+  ]
+},
+{
+  "timestamp": 2.0,
+  "simulation_date": "2024-01-15T00:00:02",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.641465575576596,
+        "lon": -73.77784536264265,
+        "alt": 66.66666666666667,
+        "x": 21.485010417220042,
+        "y": 18.411164093638774,
+        "z": 20.320000000000004
+      },
+      "velocity": 30.0,
+      "heading": 49.40567226575081,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 2.0
+    }
+  ]
+},
+{
+  "timestamp": 3.0,
+  "simulation_date": "2024-01-15T00:00:03",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.641570941561405,
+        "lon": -73.77768332003025,
+        "alt": 100.0,
+        "x": 35.15734526945234,
+        "y": 30.12732704522481,
+        "z": 30.48
+      },
+      "velocity": 35.0,
+      "heading": 49.405762730117715,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 3.0
+    }
+  ]
+},
+{
+  "timestamp": 4.0,
+  "simulation_date": "2024-01-15T00:00:04",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.641691359552425,
+        "lon": -73.7774981278468,
+        "alt": 133.33333333333334,
+        "x": 50.78292366905511,
+        "y": 43.51719672341895,
+        "z": 40.64000000000001
+      },
+      "velocity": 40.0,
+      "heading": 49.40586827239849,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 4.0
+    }
+  ]
+},
+{
+  "timestamp": 5.0,
+  "simulation_date": "2024-01-15T00:00:05",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64182682943869,
+        "lon": -73.77728978584173,
+        "alt": 166.66666666666669,
+        "x": 68.36176675750055,
+        "y": 58.580760789425106,
+        "z": 50.80000000000001
+      },
+      "velocity": 45.0,
+      "heading": 49.40598889283336,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 5.0
+    }
+  ]
+},
+{
+  "timestamp": 6.0,
+  "simulation_date": "2024-01-15T00:00:06",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64197735109542,
+        "lon": -73.77705829373315,
+        "alt": 200.00000000000003,
+        "x": 87.89389832014396,
+        "y": 75.31800536772707,
+        "z": 60.960000000000015
+      },
+      "velocity": 50.0,
+      "heading": 49.40612459169506,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 6.0
+    }
+  ]
+},
+{
+  "timestamp": 7.0,
+  "simulation_date": "2024-01-15T00:00:07",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.642142924383926,
+        "lon": -73.77680365120784,
+        "alt": 233.33333333333337,
+        "x": 109.3793447838256,
+        "y": 93.72891503739753,
+        "z": 71.12000000000002
+      },
+      "velocity": 55.0,
+      "heading": 49.40627536929367,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 7.0
+    }
+  ]
+},
+{
+  "timestamp": 8.0,
+  "simulation_date": "2024-01-15T00:00:08",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64232354915165,
+        "lon": -73.77652585792124,
+        "alt": 266.6666666666667,
+        "x": 132.81813522166686,
+        "y": 113.81347283446833,
+        "z": 81.28000000000002
+      },
+      "velocity": 60.0,
+      "heading": 49.4064412259699,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 8.0
+    }
+  ]
+},
+{
+  "timestamp": 9.0,
+  "simulation_date": "2024-01-15T00:00:09",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64251922523217,
+        "lon": -73.7762249134975,
+        "alt": 300.0,
+        "x": 158.2103013458761,
+        "y": 135.57166025430075,
+        "z": 91.44
+      },
+      "velocity": 65.0,
+      "heading": 49.40662216210069,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 9.0
+    }
+  ]
+},
+{
+  "timestamp": 10.0,
+  "simulation_date": "2024-01-15T00:00:10",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.642729952445215,
+        "lon": -73.77590081752939,
+        "alt": 333.3333333333333,
+        "x": 185.55587751614183,
+        "y": 159.00345725079544,
+        "z": 101.6
+      },
+      "velocity": 70.0,
+      "heading": 49.406818178097296,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 10.0
+    }
+  ]
+},
+{
+  "timestamp": 11.0,
+  "simulation_date": "2024-01-15T00:00:11",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.6429557305966,
+        "lon": -73.7755535695784,
+        "alt": 366.66666666666663,
+        "x": 214.85490073123947,
+        "y": 184.10884223165172,
+        "z": 111.75999999999999
+      },
+      "velocity": 75.0,
+      "heading": 49.40702927440509,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 11.0
+    }
+  ]
+},
+{
+  "timestamp": 12.0,
+  "simulation_date": "2024-01-15T00:00:12",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.6431965594783,
+        "lon": -73.77518316917465,
+        "alt": 399.99999999999994,
+        "x": 246.1074106386237,
+        "y": 210.88779206626882,
+        "z": 121.91999999999999
+      },
+      "velocity": 80.0,
+      "heading": 49.407255451503545,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 12.0
+    }
+  ]
+},
+{
+  "timestamp": 13.0,
+  "simulation_date": "2024-01-15T00:00:13",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64345243886837,
+        "lon": -73.77478961581697,
+        "alt": 433.33333333333326,
+        "x": 279.31344952363696,
+        "y": 239.34028207547436,
+        "z": 132.07999999999998
+      },
+      "velocity": 85.0,
+      "heading": 49.40749670990624,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 13.0
+    }
+  ]
+},
+{
+  "timestamp": 14.0,
+  "simulation_date": "2024-01-15T00:00:14",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64372336853105,
+        "lon": -73.77437290897281,
+        "alt": 466.6666666666666,
+        "x": 314.47306232030104,
+        "y": 269.4662860425858,
+        "z": 142.23999999999998
+      },
+      "velocity": 90.0,
+      "heading": 49.40775305016081,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 14.0
+    }
+  ]
+},
+{
+  "timestamp": 15.0,
+  "simulation_date": "2024-01-15T00:00:15",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.644009348216656,
+        "lon": -73.7739330480783,
+        "alt": 499.9999999999999,
+        "x": 351.5862966041226,
+        "y": 301.2657762055095,
+        "z": 152.39999999999998
+      },
+      "velocity": 95.0,
+      "heading": 49.40802447284955,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 15.0
+    }
+  ]
+},
+{
+  "timestamp": 16.0,
+  "simulation_date": "2024-01-15T00:00:16",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64431037766166,
+        "lon": -73.77347003253824,
+        "alt": 533.3333333333333,
+        "x": 390.65320259688957,
+        "y": 334.7387232606911,
+        "z": 162.55999999999997
+      },
+      "velocity": 100.0,
+      "heading": 49.40831097858984,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 16.0
+    }
+  ]
+},
+{
+  "timestamp": 17.0,
+  "simulation_date": "2024-01-15T00:00:17",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64462645658861,
+        "lon": -73.77298386172608,
+        "alt": 566.6666666666666,
+        "x": 431.6738331630739,
+        "y": 369.8850963567949,
+        "z": 172.72
+      },
+      "velocity": 105.0,
+      "heading": 49.408612568031685,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 17.0
+    }
+  ]
+},
+{
+  "timestamp": 18.0,
+  "simulation_date": "2024-01-15T00:00:18",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64495758470621,
+        "lon": -73.77247453498393,
+        "alt": 600.0,
+        "x": 474.6482438110305,
+        "y": 406.7048631033949,
+        "z": 182.88
+      },
+      "velocity": 110.0,
+      "heading": 49.40892924185903,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 18.0
+    }
+  ]
+},
+{
+  "timestamp": 19.0,
+  "simulation_date": "2024-01-15T00:00:19",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64530376170928,
+        "lon": -73.77194205162256,
+        "alt": 633.3333333333334,
+        "x": 519.5764926953954,
+        "y": 445.197989565444,
+        "z": 193.04000000000002
+      },
+      "velocity": 115.0,
+      "heading": 49.4092610007927,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 19.0
+    }
+  ]
+},
+{
+  "timestamp": 20.0,
+  "simulation_date": "2024-01-15T00:00:20",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.645664987278735,
+        "lon": -73.7713864109214,
+        "alt": 666.6666666666667,
+        "x": 566.4586406146881,
+        "y": 485.36444026327405,
+        "z": 203.20000000000005
+      },
+      "velocity": 120.0,
+      "heading": 49.409607845585356,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 20.0
+    }
+  ]
+},
+{
+  "timestamp": 21.0,
+  "simulation_date": "2024-01-15T00:00:21",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64604126108162,
+        "lon": -73.7708076121285,
+        "alt": 700.0000000000001,
+        "x": 615.2947510137084,
+        "y": 527.2041781733861,
+        "z": 213.36000000000004
+      },
+      "velocity": 125.0,
+      "heading": 49.40996977702565,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 21.0
+    }
+  ]
+},
+{
+  "timestamp": 22.0,
+  "simulation_date": "2024-01-15T00:00:22",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64643258277109,
+        "lon": -73.77020565446058,
+        "alt": 733.3333333333335,
+        "x": 666.0848899811401,
+        "y": 570.71716472845,
+        "z": 223.52000000000007
+      },
+      "velocity": 130.0,
+      "heading": 49.41034679593531,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 22.0
+    }
+  ]
+},
+{
+  "timestamp": 23.0,
+  "simulation_date": "2024-01-15T00:00:23",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64683895198641,
+        "lon": -73.76958053710302,
+        "alt": 766.6666666666669,
+        "x": 718.8291262519477,
+        "y": 615.9033598165151,
+        "z": 233.68000000000006
+      },
+      "velocity": 135.0,
+      "heading": 49.41073890317023,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 23.0
+    }
+  ]
+},
+{
+  "timestamp": 24.0,
+  "simulation_date": "2024-01-15T00:00:24",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.647260368352946,
+        "lon": -73.76893225920983,
+        "alt": 800.0000000000002,
+        "x": 773.5275312061779,
+        "y": 662.7627217802192,
+        "z": 243.8400000000001
+      },
+      "velocity": 140.0,
+      "heading": 49.411146099621135,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 24.0
+    }
+  ]
+},
+{
+  "timestamp": 25.0,
+  "simulation_date": "2024-01-15T00:00:25",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.647696831482186,
+        "lon": -73.76826081990363,
+        "alt": 833.3333333333336,
+        "x": 830.1801788725563,
+        "y": 711.2952074191595,
+        "z": 254.00000000000009
+      },
+      "velocity": 145.0,
+      "heading": 49.4115683862135,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 25.0
+    }
+  ]
+},
+{
+  "timestamp": 26.0,
+  "simulation_date": "2024-01-15T00:00:26",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.648148340971716,
+        "lon": -73.76756621827573,
+        "alt": 866.666666666667,
+        "x": 888.7871459212939,
+        "y": 761.5007719867317,
+        "z": 264.1600000000001
+      },
+      "velocity": 150.0,
+      "heading": 49.412005763905654,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 26.0
+    }
+  ]
+},
+{
+  "timestamp": 27.0,
+  "simulation_date": "2024-01-15T00:00:27",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.648614896405235,
+        "lon": -73.76684845338602,
+        "alt": 900.0000000000003,
+        "x": 949.3485116748781,
+        "y": 813.3793691925009,
+        "z": 274.3200000000001
+      },
+      "velocity": 155.0,
+      "heading": 49.41245823369201,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 27.0
+    }
+  ]
+},
+{
+  "timestamp": 28.0,
+  "simulation_date": "2024-01-15T00:00:28",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64909649735251,
+        "lon": -73.76610752426306,
+        "alt": 933.3333333333337,
+        "x": 1011.8643580972807,
+        "y": 866.9309511966707,
+        "z": 284.48000000000013
+      },
+      "velocity": 160.0,
+      "heading": 49.41292579659978,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 28.0
+    }
+  ]
+},
+{
+  "timestamp": 29.0,
+  "simulation_date": "2024-01-15T00:00:29",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.64959314336946,
+        "lon": -73.76534342990402,
+        "alt": 966.6666666666671,
+        "x": 1076.3347698035518,
+        "y": 922.1554686195639,
+        "z": 294.64000000000016
+      },
+      "velocity": 165.0,
+      "heading": 49.413408453690295,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 29.0
+    }
+  ]
+},
+{
+  "timestamp": 30.0,
+  "simulation_date": "2024-01-15T00:00:30",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65010483399806,
+        "lon": -73.76455616927471,
+        "alt": 1000.0000000000005,
+        "x": 1142.7598340526233,
+        "y": 979.0528705313518,
+        "z": 304.8000000000002
+      },
+      "velocity": 170.0,
+      "heading": 49.413906206061256,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 30.0
+    }
+  ]
+},
+{
+  "timestamp": 31.0,
+  "simulation_date": "2024-01-15T00:00:31",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65063156876641,
+        "lon": -73.76374574130953,
+        "alt": 1033.3333333333337,
+        "x": 1211.1396407545058,
+        "y": 1037.6231044591652,
+        "z": 314.96000000000015
+      },
+      "velocity": 175.0,
+      "heading": 49.41441905484203,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 31.0
+    }
+  ]
+},
+{
+  "timestamp": 32.0,
+  "simulation_date": "2024-01-15T00:00:32",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65117334718867,
+        "lon": -73.76291214491154,
+        "alt": 1066.666666666667,
+        "x": 1281.4742824642906,
+        "y": 1097.8661163799827,
+        "z": 325.1200000000001
+      },
+      "velocity": 180.0,
+      "heading": 49.41494700119944,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 32.0
+    }
+  ]
+},
+{
+  "timestamp": 33.0,
+  "simulation_date": "2024-01-15T00:00:33",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.6517301687651,
+        "lon": -73.76205537895235,
+        "alt": 1100.0000000000002,
+        "x": 1353.7638543881471,
+        "y": 1159.7818507253724,
+        "z": 335.2800000000001
+      },
+      "velocity": 185.0,
+      "heading": 49.415490046330376,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 33.0
+    }
+  ]
+},
+{
+  "timestamp": 34.0,
+  "simulation_date": "2024-01-15T00:00:34",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65230203298205,
+        "lon": -73.76117544227226,
+        "alt": 1133.3333333333335,
+        "x": 1428.008454377327,
+        "y": 1223.3702503799104,
+        "z": 345.44000000000005
+      },
+      "velocity": 190.0,
+      "heading": 49.416048191468974,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 34.0
+    }
+  ]
+},
+{
+  "timestamp": 35.0,
+  "simulation_date": "2024-01-15T00:00:35",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.652888939311985,
+        "lon": -73.7602723336801,
+        "alt": 1166.6666666666667,
+        "x": 1504.208182935358,
+        "y": 1288.6312566843426,
+        "z": 355.6
+      },
+      "velocity": 195.0,
+      "heading": 49.41662143788324,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 35.0
+    }
+  ]
+},
+{
+  "timestamp": 36.0,
+  "simulation_date": "2024-01-15T00:00:36",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.653490887213415,
+        "lon": -73.75934605195336,
+        "alt": 1200.0,
+        "x": 1582.363143213248,
+        "y": 1355.5648094276826,
+        "z": 365.76
+      },
+      "velocity": 200.0,
+      "heading": 49.41720978687539,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 36.0
+    }
+  ]
+},
+{
+  "timestamp": 37.0,
+  "simulation_date": "2024-01-15T00:00:37",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.654107876130944,
+        "lon": -73.75839659583808,
+        "alt": 1233.3333333333333,
+        "x": 1662.4734410118829,
+        "y": 1424.1708468527434,
+        "z": 375.92
+      },
+      "velocity": 205.0,
+      "heading": 49.417813239782106,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 37.0
+    }
+  ]
+},
+{
+  "timestamp": 38.0,
+  "simulation_date": "2024-01-15T00:00:38",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65473990549525,
+        "lon": -73.75742396404891,
+        "alt": 1266.6666666666665,
+        "x": 1744.5391847832268,
+        "y": 1494.4493056537656,
+        "z": 386.08
+      },
+      "velocity": 210.0,
+      "heading": 49.41843179797337,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 38.0
+    }
+  ]
+},
+{
+  "timestamp": 39.0,
+  "simulation_date": "2024-01-15T00:00:39",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65538697472308,
+        "lon": -73.75642815526912,
+        "alt": 1299.9999999999998,
+        "x": 1828.5604856267225,
+        "y": 1566.4001209764194,
+        "z": 396.23999999999995
+      },
+      "velocity": 215.0,
+      "heading": 49.41906546285492,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 39.0
+    }
+  ]
+},
+{
+  "timestamp": 40.0,
+  "simulation_date": "2024-01-15T00:00:40",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65604908321726,
+        "lon": -73.7554091681505,
+        "alt": 1333.333333333333,
+        "x": 1914.537457296489,
+        "y": 1640.0232264178028,
+        "z": 406.3999999999999
+      },
+      "velocity": 220.0,
+      "heading": 49.419714235865456,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 40.0
+    }
+  ]
+},
+{
+  "timestamp": 41.0,
+  "simulation_date": "2024-01-15T00:00:41",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65672623036671,
+        "lon": -73.7543670013135,
+        "alt": 1366.6666666666663,
+        "x": 2002.4702161941245,
+        "y": 1715.3185540280228,
+        "z": 416.5599999999999
+      },
+      "velocity": 225.0,
+      "heading": 49.42037811847831,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 41.0
+    }
+  ]
+},
+{
+  "timestamp": 42.0,
+  "simulation_date": "2024-01-15T00:00:42",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65741841554636,
+        "lon": -73.75330165334708,
+        "alt": 1399.9999999999995,
+        "x": 2092.3588813735028,
+        "y": 1792.2860343038744,
+        "z": 426.71999999999986
+      },
+      "velocity": 230.0,
+      "heading": 49.42105711220307,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 42.0
+    }
+  ]
+},
+{
+  "timestamp": 43.0,
+  "simulation_date": "2024-01-15T00:00:43",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65812563811726,
+        "lon": -73.75221312280878,
+        "alt": 1433.3333333333328,
+        "x": 2184.203574543174,
+        "y": 1870.9255961967417,
+        "z": 436.8799999999999
+      },
+      "velocity": 235.0,
+      "heading": 49.421751218581505,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 43.0
+    }
+  ]
+},
+{
+  "timestamp": 44.0,
+  "simulation_date": "2024-01-15T00:00:44",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65884789742646,
+        "lon": -73.75110140822474,
+        "alt": 1466.666666666666,
+        "x": 2278.0044200603666,
+        "y": 1951.2371671015362,
+        "z": 447.03999999999985
+      },
+      "velocity": 240.0,
+      "heading": 49.422460439190445,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 44.0
+    }
+  ]
+},
+{
+  "timestamp": 45.0,
+  "simulation_date": "2024-01-15T00:00:45",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.65958519280713,
+        "lon": -73.74996650808963,
+        "alt": 1499.9999999999993,
+        "x": 2373.761544936982,
+        "y": 2033.2206728701287,
+        "z": 457.1999999999998
+      },
+      "velocity": 245.0,
+      "heading": 49.423184775640266,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 45.0
+    }
+  ]
+},
+{
+  "timestamp": 46.0,
+  "simulation_date": "2024-01-15T00:00:46",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66033752357845,
+        "lon": -73.74880842086667,
+        "alt": 1533.3333333333326,
+        "x": 2471.475078838399,
+        "y": 2116.8760377994977,
+        "z": 467.3599999999998
+      },
+      "velocity": 250.0,
+      "heading": 49.42392422957698,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 46.0
+    }
+  ]
+},
+{
+  "timestamp": 47.0,
+  "simulation_date": "2024-01-15T00:00:47",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66108984277965,
+        "lon": -73.74765030752103,
+        "alt": 1566.6666666666658,
+        "x": 2569.1908168390137,
+        "y": 2200.5301161907187,
+        "z": 477.51999999999975
+      },
+      "velocity": 250.0,
+      "heading": 49.424678802680546,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 47.0
+    }
+  ]
+},
+{
+  "timestamp": 48.0,
+  "simulation_date": "2024-01-15T00:00:48",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66184215041017,
+        "lon": -73.74649216805182,
+        "alt": 1599.999999999999,
+        "x": 2666.9087590143668,
+        "y": 2284.182907980585,
+        "z": 487.6799999999997
+      },
+      "velocity": 250.0,
+      "heading": 49.42543340434014,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 48.0
+    }
+  ]
+},
+{
+  "timestamp": 49.0,
+  "simulation_date": "2024-01-15T00:00:49",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66259444646945,
+        "lon": -73.74533400245816,
+        "alt": 1633.3333333333323,
+        "x": 2764.628905437598,
+        "y": 2367.834413106679,
+        "z": 497.83999999999975
+      },
+      "velocity": 250.0,
+      "heading": 49.42618803455696,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 49.0
+    }
+  ]
+},
+{
+  "timestamp": 50.0,
+  "simulation_date": "2024-01-15T00:00:50",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.6633467309569,
+        "lon": -73.74417581073918,
+        "alt": 1666.6666666666656,
+        "x": 2862.3512561842476,
+        "y": 2451.484631505005,
+        "z": 507.9999999999997
+      },
+      "velocity": 250.0,
+      "heading": 49.426942693331625,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 50.0
+    }
+  ]
+},
+{
+  "timestamp": 51.0,
+  "simulation_date": "2024-01-15T00:00:51",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66409900387197,
+        "lon": -73.74301759289398,
+        "alt": 1699.9999999999989,
+        "x": 2960.075811328657,
+        "y": 2535.1335631123548,
+        "z": 518.1599999999996
+      },
+      "velocity": 250.0,
+      "heading": 49.42769738066528,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 51.0
+    }
+  ]
+},
+{
+  "timestamp": 52.0,
+  "simulation_date": "2024-01-15T00:00:52",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66485126521409,
+        "lon": -73.7418593489217,
+        "alt": 1733.3333333333321,
+        "x": 3057.8025709439657,
+        "y": 2618.7812078671013,
+        "z": 528.3199999999997
+      },
+      "velocity": 250.0,
+      "heading": 49.42845209655803,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 52.0
+    }
+  ]
+},
+{
+  "timestamp": 53.0,
+  "simulation_date": "2024-01-15T00:00:53",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66560351498267,
+        "lon": -73.74070107882144,
+        "alt": 1766.6666666666654,
+        "x": 3155.5315351045156,
+        "y": 2702.4275657028784,
+        "z": 538.4799999999997
+      },
+      "velocity": 250.0,
+      "heading": 49.42920684101222,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 53.0
+    }
+  ]
+},
+{
+  "timestamp": 54.0,
+  "simulation_date": "2024-01-15T00:00:54",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.666355753177164,
+        "lon": -73.73954278259234,
+        "alt": 1799.9999999999986,
+        "x": 3253.262703885846,
+        "y": 2786.0726365588484,
+        "z": 548.6399999999996
+      },
+      "velocity": 250.0,
+      "heading": 49.42996161402698,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 54.0
+    }
+  ]
+},
+{
+  "timestamp": 55.0,
+  "simulation_date": "2024-01-15T00:00:55",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.667107979796995,
+        "lon": -73.73838446023349,
+        "alt": 1833.333333333332,
+        "x": 3350.996077362297,
+        "y": 2869.716420371015,
+        "z": 558.7999999999996
+      },
+      "velocity": 250.0,
+      "heading": 49.43071641560306,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 55.0
+    }
+  ]
+},
+{
+  "timestamp": 56.0,
+  "simulation_date": "2024-01-15T00:00:56",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66786019484159,
+        "lon": -73.73722611174402,
+        "alt": 1866.6666666666652,
+        "x": 3448.7316556082096,
+        "y": 2953.35891707538,
+        "z": 568.9599999999996
+      },
+      "velocity": 250.0,
+      "heading": 49.43147124574176,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 56.0
+    }
+  ]
+},
+{
+  "timestamp": 57.0,
+  "simulation_date": "2024-01-15T00:00:57",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66861239831039,
+        "lon": -73.73606773712305,
+        "alt": 1899.9999999999984,
+        "x": 3546.469438697923,
+        "y": 3037.0001266103177,
+        "z": 579.1199999999995
+      },
+      "velocity": 250.0,
+      "heading": 49.432226104443316,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 57.0
+    }
+  ]
+},
+{
+  "timestamp": 58.0,
+  "simulation_date": "2024-01-15T00:00:58",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.66936459020282,
+        "lon": -73.7349093363697,
+        "alt": 1933.3333333333317,
+        "x": 3644.20942670578,
+        "y": 3120.64004891183,
+        "z": 589.2799999999995
+      },
+      "velocity": 250.0,
+      "heading": 49.43298099170937,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 58.0
+    }
+  ]
+},
+{
+  "timestamp": 59.0,
+  "simulation_date": "2024-01-15T00:00:59",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.67011677051832,
+        "lon": -73.73375090948308,
+        "alt": 1966.666666666665,
+        "x": 3741.9516197061184,
+        "y": 3204.2786839175014,
+        "z": 599.4399999999995
+      },
+      "velocity": 250.0,
+      "heading": 49.43373590754004,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 59.0
+    }
+  ]
+},
+{
+  "timestamp": 60.0,
+  "simulation_date": "2024-01-15T00:01:00",
+  "aircraft_count": 1,
+  "aircraft": [
+    {
+      "id": "KJFKKBOS_0000",
+      "position": {
+        "lat": 40.67086893925631,
+        "lon": -73.73259245646233,
+        "alt": 1999.9999999999982,
+        "x": 3839.6960177720816,
+        "y": 3287.9160315625436,
+        "z": 609.5999999999995
+      },
+      "velocity": 250.0,
+      "heading": 49.4344908519368,
+      "status": "CLIMBING",
+      "route_info": {
+        "departure": "KJFK",
+        "arrival": "KBOS",
+        "aircraft_type": "B738"
+      },
+      "waypoint_progress": {
+        "current_waypoint": 1,
+        "total_waypoints": 5
+      },
+      "time_in_flight": 60.0
+    }
+  ]
+}
+]

@@ -1,0 +1,1802 @@
+[
+{
+  "timestamp": 1.0,
+  "simulation_date": "2024-01-15T00:00:01",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 2.0,
+  "simulation_date": "2024-01-15T00:00:02",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 3.0,
+  "simulation_date": "2024-01-15T00:00:03",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 4.0,
+  "simulation_date": "2024-01-15T00:00:04",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 5.0,
+  "simulation_date": "2024-01-15T00:00:05",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 6.0,
+  "simulation_date": "2024-01-15T00:00:06",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 7.0,
+  "simulation_date": "2024-01-15T00:00:07",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 8.0,
+  "simulation_date": "2024-01-15T00:00:08",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 9.0,
+  "simulation_date": "2024-01-15T00:00:09",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 10.0,
+  "simulation_date": "2024-01-15T00:00:10",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 11.0,
+  "simulation_date": "2024-01-15T00:00:11",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 12.0,
+  "simulation_date": "2024-01-15T00:00:12",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 13.0,
+  "simulation_date": "2024-01-15T00:00:13",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 14.0,
+  "simulation_date": "2024-01-15T00:00:14",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 15.0,
+  "simulation_date": "2024-01-15T00:00:15",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 16.0,
+  "simulation_date": "2024-01-15T00:00:16",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 17.0,
+  "simulation_date": "2024-01-15T00:00:17",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 18.0,
+  "simulation_date": "2024-01-15T00:00:18",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 19.0,
+  "simulation_date": "2024-01-15T00:00:19",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 20.0,
+  "simulation_date": "2024-01-15T00:00:20",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 21.0,
+  "simulation_date": "2024-01-15T00:00:21",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 22.0,
+  "simulation_date": "2024-01-15T00:00:22",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 23.0,
+  "simulation_date": "2024-01-15T00:00:23",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 24.0,
+  "simulation_date": "2024-01-15T00:00:24",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 25.0,
+  "simulation_date": "2024-01-15T00:00:25",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 26.0,
+  "simulation_date": "2024-01-15T00:00:26",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 27.0,
+  "simulation_date": "2024-01-15T00:00:27",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 28.0,
+  "simulation_date": "2024-01-15T00:00:28",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 29.0,
+  "simulation_date": "2024-01-15T00:00:29",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 30.0,
+  "simulation_date": "2024-01-15T00:00:30",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 31.0,
+  "simulation_date": "2024-01-15T00:00:31",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 32.0,
+  "simulation_date": "2024-01-15T00:00:32",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 33.0,
+  "simulation_date": "2024-01-15T00:00:33",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 34.0,
+  "simulation_date": "2024-01-15T00:00:34",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 35.0,
+  "simulation_date": "2024-01-15T00:00:35",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 36.0,
+  "simulation_date": "2024-01-15T00:00:36",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 37.0,
+  "simulation_date": "2024-01-15T00:00:37",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 38.0,
+  "simulation_date": "2024-01-15T00:00:38",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 39.0,
+  "simulation_date": "2024-01-15T00:00:39",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 40.0,
+  "simulation_date": "2024-01-15T00:00:40",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 41.0,
+  "simulation_date": "2024-01-15T00:00:41",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 42.0,
+  "simulation_date": "2024-01-15T00:00:42",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 43.0,
+  "simulation_date": "2024-01-15T00:00:43",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 44.0,
+  "simulation_date": "2024-01-15T00:00:44",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 45.0,
+  "simulation_date": "2024-01-15T00:00:45",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 46.0,
+  "simulation_date": "2024-01-15T00:00:46",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 47.0,
+  "simulation_date": "2024-01-15T00:00:47",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 48.0,
+  "simulation_date": "2024-01-15T00:00:48",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 49.0,
+  "simulation_date": "2024-01-15T00:00:49",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 50.0,
+  "simulation_date": "2024-01-15T00:00:50",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 51.0,
+  "simulation_date": "2024-01-15T00:00:51",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 52.0,
+  "simulation_date": "2024-01-15T00:00:52",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 53.0,
+  "simulation_date": "2024-01-15T00:00:53",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 54.0,
+  "simulation_date": "2024-01-15T00:00:54",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 55.0,
+  "simulation_date": "2024-01-15T00:00:55",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 56.0,
+  "simulation_date": "2024-01-15T00:00:56",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 57.0,
+  "simulation_date": "2024-01-15T00:00:57",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 58.0,
+  "simulation_date": "2024-01-15T00:00:58",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 59.0,
+  "simulation_date": "2024-01-15T00:00:59",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 60.0,
+  "simulation_date": "2024-01-15T00:01:00",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 61.0,
+  "simulation_date": "2024-01-15T00:01:01",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 62.0,
+  "simulation_date": "2024-01-15T00:01:02",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 63.0,
+  "simulation_date": "2024-01-15T00:01:03",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 64.0,
+  "simulation_date": "2024-01-15T00:01:04",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 65.0,
+  "simulation_date": "2024-01-15T00:01:05",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 66.0,
+  "simulation_date": "2024-01-15T00:01:06",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 67.0,
+  "simulation_date": "2024-01-15T00:01:07",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 68.0,
+  "simulation_date": "2024-01-15T00:01:08",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 69.0,
+  "simulation_date": "2024-01-15T00:01:09",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 70.0,
+  "simulation_date": "2024-01-15T00:01:10",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 71.0,
+  "simulation_date": "2024-01-15T00:01:11",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 72.0,
+  "simulation_date": "2024-01-15T00:01:12",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 73.0,
+  "simulation_date": "2024-01-15T00:01:13",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 74.0,
+  "simulation_date": "2024-01-15T00:01:14",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 75.0,
+  "simulation_date": "2024-01-15T00:01:15",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 76.0,
+  "simulation_date": "2024-01-15T00:01:16",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 77.0,
+  "simulation_date": "2024-01-15T00:01:17",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 78.0,
+  "simulation_date": "2024-01-15T00:01:18",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 79.0,
+  "simulation_date": "2024-01-15T00:01:19",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 80.0,
+  "simulation_date": "2024-01-15T00:01:20",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 81.0,
+  "simulation_date": "2024-01-15T00:01:21",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 82.0,
+  "simulation_date": "2024-01-15T00:01:22",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 83.0,
+  "simulation_date": "2024-01-15T00:01:23",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 84.0,
+  "simulation_date": "2024-01-15T00:01:24",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 85.0,
+  "simulation_date": "2024-01-15T00:01:25",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 86.0,
+  "simulation_date": "2024-01-15T00:01:26",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 87.0,
+  "simulation_date": "2024-01-15T00:01:27",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 88.0,
+  "simulation_date": "2024-01-15T00:01:28",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 89.0,
+  "simulation_date": "2024-01-15T00:01:29",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 90.0,
+  "simulation_date": "2024-01-15T00:01:30",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 91.0,
+  "simulation_date": "2024-01-15T00:01:31",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 92.0,
+  "simulation_date": "2024-01-15T00:01:32",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 93.0,
+  "simulation_date": "2024-01-15T00:01:33",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 94.0,
+  "simulation_date": "2024-01-15T00:01:34",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 95.0,
+  "simulation_date": "2024-01-15T00:01:35",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 96.0,
+  "simulation_date": "2024-01-15T00:01:36",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 97.0,
+  "simulation_date": "2024-01-15T00:01:37",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 98.0,
+  "simulation_date": "2024-01-15T00:01:38",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 99.0,
+  "simulation_date": "2024-01-15T00:01:39",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 100.0,
+  "simulation_date": "2024-01-15T00:01:40",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 101.0,
+  "simulation_date": "2024-01-15T00:01:41",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 102.0,
+  "simulation_date": "2024-01-15T00:01:42",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 103.0,
+  "simulation_date": "2024-01-15T00:01:43",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 104.0,
+  "simulation_date": "2024-01-15T00:01:44",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 105.0,
+  "simulation_date": "2024-01-15T00:01:45",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 106.0,
+  "simulation_date": "2024-01-15T00:01:46",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 107.0,
+  "simulation_date": "2024-01-15T00:01:47",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 108.0,
+  "simulation_date": "2024-01-15T00:01:48",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 109.0,
+  "simulation_date": "2024-01-15T00:01:49",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 110.0,
+  "simulation_date": "2024-01-15T00:01:50",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 111.0,
+  "simulation_date": "2024-01-15T00:01:51",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 112.0,
+  "simulation_date": "2024-01-15T00:01:52",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 113.0,
+  "simulation_date": "2024-01-15T00:01:53",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 114.0,
+  "simulation_date": "2024-01-15T00:01:54",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 115.0,
+  "simulation_date": "2024-01-15T00:01:55",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 116.0,
+  "simulation_date": "2024-01-15T00:01:56",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 117.0,
+  "simulation_date": "2024-01-15T00:01:57",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 118.0,
+  "simulation_date": "2024-01-15T00:01:58",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 119.0,
+  "simulation_date": "2024-01-15T00:01:59",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 120.0,
+  "simulation_date": "2024-01-15T00:02:00",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 121.0,
+  "simulation_date": "2024-01-15T00:02:01",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 122.0,
+  "simulation_date": "2024-01-15T00:02:02",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 123.0,
+  "simulation_date": "2024-01-15T00:02:03",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 124.0,
+  "simulation_date": "2024-01-15T00:02:04",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 125.0,
+  "simulation_date": "2024-01-15T00:02:05",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 126.0,
+  "simulation_date": "2024-01-15T00:02:06",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 127.0,
+  "simulation_date": "2024-01-15T00:02:07",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 128.0,
+  "simulation_date": "2024-01-15T00:02:08",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 129.0,
+  "simulation_date": "2024-01-15T00:02:09",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 130.0,
+  "simulation_date": "2024-01-15T00:02:10",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 131.0,
+  "simulation_date": "2024-01-15T00:02:11",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 132.0,
+  "simulation_date": "2024-01-15T00:02:12",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 133.0,
+  "simulation_date": "2024-01-15T00:02:13",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 134.0,
+  "simulation_date": "2024-01-15T00:02:14",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 135.0,
+  "simulation_date": "2024-01-15T00:02:15",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 136.0,
+  "simulation_date": "2024-01-15T00:02:16",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 137.0,
+  "simulation_date": "2024-01-15T00:02:17",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 138.0,
+  "simulation_date": "2024-01-15T00:02:18",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 139.0,
+  "simulation_date": "2024-01-15T00:02:19",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 140.0,
+  "simulation_date": "2024-01-15T00:02:20",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 141.0,
+  "simulation_date": "2024-01-15T00:02:21",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 142.0,
+  "simulation_date": "2024-01-15T00:02:22",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 143.0,
+  "simulation_date": "2024-01-15T00:02:23",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 144.0,
+  "simulation_date": "2024-01-15T00:02:24",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 145.0,
+  "simulation_date": "2024-01-15T00:02:25",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 146.0,
+  "simulation_date": "2024-01-15T00:02:26",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 147.0,
+  "simulation_date": "2024-01-15T00:02:27",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 148.0,
+  "simulation_date": "2024-01-15T00:02:28",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 149.0,
+  "simulation_date": "2024-01-15T00:02:29",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 150.0,
+  "simulation_date": "2024-01-15T00:02:30",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 151.0,
+  "simulation_date": "2024-01-15T00:02:31",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 152.0,
+  "simulation_date": "2024-01-15T00:02:32",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 153.0,
+  "simulation_date": "2024-01-15T00:02:33",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 154.0,
+  "simulation_date": "2024-01-15T00:02:34",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 155.0,
+  "simulation_date": "2024-01-15T00:02:35",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 156.0,
+  "simulation_date": "2024-01-15T00:02:36",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 157.0,
+  "simulation_date": "2024-01-15T00:02:37",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 158.0,
+  "simulation_date": "2024-01-15T00:02:38",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 159.0,
+  "simulation_date": "2024-01-15T00:02:39",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 160.0,
+  "simulation_date": "2024-01-15T00:02:40",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 161.0,
+  "simulation_date": "2024-01-15T00:02:41",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 162.0,
+  "simulation_date": "2024-01-15T00:02:42",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 163.0,
+  "simulation_date": "2024-01-15T00:02:43",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 164.0,
+  "simulation_date": "2024-01-15T00:02:44",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 165.0,
+  "simulation_date": "2024-01-15T00:02:45",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 166.0,
+  "simulation_date": "2024-01-15T00:02:46",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 167.0,
+  "simulation_date": "2024-01-15T00:02:47",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 168.0,
+  "simulation_date": "2024-01-15T00:02:48",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 169.0,
+  "simulation_date": "2024-01-15T00:02:49",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 170.0,
+  "simulation_date": "2024-01-15T00:02:50",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 171.0,
+  "simulation_date": "2024-01-15T00:02:51",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 172.0,
+  "simulation_date": "2024-01-15T00:02:52",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 173.0,
+  "simulation_date": "2024-01-15T00:02:53",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 174.0,
+  "simulation_date": "2024-01-15T00:02:54",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 175.0,
+  "simulation_date": "2024-01-15T00:02:55",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 176.0,
+  "simulation_date": "2024-01-15T00:02:56",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 177.0,
+  "simulation_date": "2024-01-15T00:02:57",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 178.0,
+  "simulation_date": "2024-01-15T00:02:58",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 179.0,
+  "simulation_date": "2024-01-15T00:02:59",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 180.0,
+  "simulation_date": "2024-01-15T00:03:00",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 181.0,
+  "simulation_date": "2024-01-15T00:03:01",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 182.0,
+  "simulation_date": "2024-01-15T00:03:02",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 183.0,
+  "simulation_date": "2024-01-15T00:03:03",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 184.0,
+  "simulation_date": "2024-01-15T00:03:04",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 185.0,
+  "simulation_date": "2024-01-15T00:03:05",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 186.0,
+  "simulation_date": "2024-01-15T00:03:06",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 187.0,
+  "simulation_date": "2024-01-15T00:03:07",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 188.0,
+  "simulation_date": "2024-01-15T00:03:08",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 189.0,
+  "simulation_date": "2024-01-15T00:03:09",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 190.0,
+  "simulation_date": "2024-01-15T00:03:10",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 191.0,
+  "simulation_date": "2024-01-15T00:03:11",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 192.0,
+  "simulation_date": "2024-01-15T00:03:12",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 193.0,
+  "simulation_date": "2024-01-15T00:03:13",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 194.0,
+  "simulation_date": "2024-01-15T00:03:14",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 195.0,
+  "simulation_date": "2024-01-15T00:03:15",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 196.0,
+  "simulation_date": "2024-01-15T00:03:16",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 197.0,
+  "simulation_date": "2024-01-15T00:03:17",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 198.0,
+  "simulation_date": "2024-01-15T00:03:18",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 199.0,
+  "simulation_date": "2024-01-15T00:03:19",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 200.0,
+  "simulation_date": "2024-01-15T00:03:20",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 201.0,
+  "simulation_date": "2024-01-15T00:03:21",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 202.0,
+  "simulation_date": "2024-01-15T00:03:22",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 203.0,
+  "simulation_date": "2024-01-15T00:03:23",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 204.0,
+  "simulation_date": "2024-01-15T00:03:24",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 205.0,
+  "simulation_date": "2024-01-15T00:03:25",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 206.0,
+  "simulation_date": "2024-01-15T00:03:26",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 207.0,
+  "simulation_date": "2024-01-15T00:03:27",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 208.0,
+  "simulation_date": "2024-01-15T00:03:28",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 209.0,
+  "simulation_date": "2024-01-15T00:03:29",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 210.0,
+  "simulation_date": "2024-01-15T00:03:30",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 211.0,
+  "simulation_date": "2024-01-15T00:03:31",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 212.0,
+  "simulation_date": "2024-01-15T00:03:32",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 213.0,
+  "simulation_date": "2024-01-15T00:03:33",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 214.0,
+  "simulation_date": "2024-01-15T00:03:34",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 215.0,
+  "simulation_date": "2024-01-15T00:03:35",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 216.0,
+  "simulation_date": "2024-01-15T00:03:36",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 217.0,
+  "simulation_date": "2024-01-15T00:03:37",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 218.0,
+  "simulation_date": "2024-01-15T00:03:38",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 219.0,
+  "simulation_date": "2024-01-15T00:03:39",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 220.0,
+  "simulation_date": "2024-01-15T00:03:40",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 221.0,
+  "simulation_date": "2024-01-15T00:03:41",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 222.0,
+  "simulation_date": "2024-01-15T00:03:42",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 223.0,
+  "simulation_date": "2024-01-15T00:03:43",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 224.0,
+  "simulation_date": "2024-01-15T00:03:44",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 225.0,
+  "simulation_date": "2024-01-15T00:03:45",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 226.0,
+  "simulation_date": "2024-01-15T00:03:46",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 227.0,
+  "simulation_date": "2024-01-15T00:03:47",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 228.0,
+  "simulation_date": "2024-01-15T00:03:48",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 229.0,
+  "simulation_date": "2024-01-15T00:03:49",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 230.0,
+  "simulation_date": "2024-01-15T00:03:50",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 231.0,
+  "simulation_date": "2024-01-15T00:03:51",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 232.0,
+  "simulation_date": "2024-01-15T00:03:52",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 233.0,
+  "simulation_date": "2024-01-15T00:03:53",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 234.0,
+  "simulation_date": "2024-01-15T00:03:54",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 235.0,
+  "simulation_date": "2024-01-15T00:03:55",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 236.0,
+  "simulation_date": "2024-01-15T00:03:56",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 237.0,
+  "simulation_date": "2024-01-15T00:03:57",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 238.0,
+  "simulation_date": "2024-01-15T00:03:58",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 239.0,
+  "simulation_date": "2024-01-15T00:03:59",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 240.0,
+  "simulation_date": "2024-01-15T00:04:00",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 241.0,
+  "simulation_date": "2024-01-15T00:04:01",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 242.0,
+  "simulation_date": "2024-01-15T00:04:02",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 243.0,
+  "simulation_date": "2024-01-15T00:04:03",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 244.0,
+  "simulation_date": "2024-01-15T00:04:04",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 245.0,
+  "simulation_date": "2024-01-15T00:04:05",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 246.0,
+  "simulation_date": "2024-01-15T00:04:06",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 247.0,
+  "simulation_date": "2024-01-15T00:04:07",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 248.0,
+  "simulation_date": "2024-01-15T00:04:08",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 249.0,
+  "simulation_date": "2024-01-15T00:04:09",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 250.0,
+  "simulation_date": "2024-01-15T00:04:10",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 251.0,
+  "simulation_date": "2024-01-15T00:04:11",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 252.0,
+  "simulation_date": "2024-01-15T00:04:12",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 253.0,
+  "simulation_date": "2024-01-15T00:04:13",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 254.0,
+  "simulation_date": "2024-01-15T00:04:14",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 255.0,
+  "simulation_date": "2024-01-15T00:04:15",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 256.0,
+  "simulation_date": "2024-01-15T00:04:16",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 257.0,
+  "simulation_date": "2024-01-15T00:04:17",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 258.0,
+  "simulation_date": "2024-01-15T00:04:18",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 259.0,
+  "simulation_date": "2024-01-15T00:04:19",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 260.0,
+  "simulation_date": "2024-01-15T00:04:20",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 261.0,
+  "simulation_date": "2024-01-15T00:04:21",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 262.0,
+  "simulation_date": "2024-01-15T00:04:22",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 263.0,
+  "simulation_date": "2024-01-15T00:04:23",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 264.0,
+  "simulation_date": "2024-01-15T00:04:24",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 265.0,
+  "simulation_date": "2024-01-15T00:04:25",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 266.0,
+  "simulation_date": "2024-01-15T00:04:26",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 267.0,
+  "simulation_date": "2024-01-15T00:04:27",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 268.0,
+  "simulation_date": "2024-01-15T00:04:28",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 269.0,
+  "simulation_date": "2024-01-15T00:04:29",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 270.0,
+  "simulation_date": "2024-01-15T00:04:30",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 271.0,
+  "simulation_date": "2024-01-15T00:04:31",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 272.0,
+  "simulation_date": "2024-01-15T00:04:32",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 273.0,
+  "simulation_date": "2024-01-15T00:04:33",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 274.0,
+  "simulation_date": "2024-01-15T00:04:34",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 275.0,
+  "simulation_date": "2024-01-15T00:04:35",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 276.0,
+  "simulation_date": "2024-01-15T00:04:36",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 277.0,
+  "simulation_date": "2024-01-15T00:04:37",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 278.0,
+  "simulation_date": "2024-01-15T00:04:38",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 279.0,
+  "simulation_date": "2024-01-15T00:04:39",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 280.0,
+  "simulation_date": "2024-01-15T00:04:40",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 281.0,
+  "simulation_date": "2024-01-15T00:04:41",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 282.0,
+  "simulation_date": "2024-01-15T00:04:42",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 283.0,
+  "simulation_date": "2024-01-15T00:04:43",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 284.0,
+  "simulation_date": "2024-01-15T00:04:44",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 285.0,
+  "simulation_date": "2024-01-15T00:04:45",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 286.0,
+  "simulation_date": "2024-01-15T00:04:46",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 287.0,
+  "simulation_date": "2024-01-15T00:04:47",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 288.0,
+  "simulation_date": "2024-01-15T00:04:48",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 289.0,
+  "simulation_date": "2024-01-15T00:04:49",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 290.0,
+  "simulation_date": "2024-01-15T00:04:50",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 291.0,
+  "simulation_date": "2024-01-15T00:04:51",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 292.0,
+  "simulation_date": "2024-01-15T00:04:52",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 293.0,
+  "simulation_date": "2024-01-15T00:04:53",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 294.0,
+  "simulation_date": "2024-01-15T00:04:54",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 295.0,
+  "simulation_date": "2024-01-15T00:04:55",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 296.0,
+  "simulation_date": "2024-01-15T00:04:56",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 297.0,
+  "simulation_date": "2024-01-15T00:04:57",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 298.0,
+  "simulation_date": "2024-01-15T00:04:58",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 299.0,
+  "simulation_date": "2024-01-15T00:04:59",
+  "aircraft_count": 0,
+  "aircraft": []
+},
+{
+  "timestamp": 300.0,
+  "simulation_date": "2024-01-15T00:05:00",
+  "aircraft_count": 0,
+  "aircraft": []
+}
+]

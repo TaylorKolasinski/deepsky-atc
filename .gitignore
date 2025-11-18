@@ -25,3 +25,6 @@ data/*.json
 # OS
 .DS_Store
 Thumbs.db
+# Simulation output files (too large for git)
+data/baseline*/output/*.json
+data/output/*.json
