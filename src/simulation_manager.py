@@ -15,6 +15,7 @@ from src.simulation_output import SimulationOutput
 from src.aircraft import Aircraft
 from src.route_generator import FlightRoute, load_routes_from_data
 from src.conflict_detection import ConflictDetector, ConflictTracker
+from src.metrics import PerformanceMetrics
 
 
 class SimulationManager:
@@ -31,6 +32,7 @@ class SimulationManager:
         output: Output interface for state export
         conflict_detector: Conflict detection engine
         conflict_tracker: Conflict history and statistics
+        metrics: Performance metrics tracker
         aircraft_list: List of active Aircraft objects
         simulation_time: Current simulation time in seconds
         total_aircraft_spawned: Total number of aircraft created
@@ -58,6 +60,9 @@ class SimulationManager:
         # Conflict detection
         self.conflict_detector = ConflictDetector()
         self.conflict_tracker = ConflictTracker()
+
+        # Performance metrics
+        self.metrics = PerformanceMetrics()
 
         # Simulation state
         self.aircraft_list: List[Aircraft] = []
@@ -152,6 +157,8 @@ class SimulationManager:
             # Check if landed
             if aircraft.status == 'LANDED':
                 self.completed_flights += 1
+                # Record flight completion metrics
+                self.metrics.record_flight_completion(aircraft)
                 # Don't add to active list (remove from simulation)
             else:
                 active_aircraft.append(aircraft)
@@ -173,6 +180,9 @@ class SimulationManager:
 
         # Update conflict tracker
         self.conflict_tracker.update(self.simulation_time, conflicts)
+
+        # Update performance metrics
+        self.metrics.update(self.simulation_time, in_flight_aircraft, conflicts)
 
         # Export current state (including conflicts)
         self.output.export_state(
@@ -269,13 +279,17 @@ class SimulationManager:
         # Get conflict statistics
         conflict_stats = self.conflict_tracker.get_statistics()
 
+        # Get performance metrics
+        performance_metrics = self.metrics.get_summary_statistics()
+
         return {
             'total_flights': self.total_aircraft_spawned,
             'completed_flights': self.completed_flights,
             'active_flights': active_count,
             'waiting_flights': waiting_count,
             'total_simulation_time': self.simulation_time,
-            'conflicts': conflict_stats
+            'conflicts': conflict_stats,
+            'performance_metrics': performance_metrics
         }
 
     def __repr__(self) -> str:
